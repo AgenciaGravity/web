@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "img": "Branding_icon",
+    "title": "Branding",
+    "paragraph": "Desarrollo de la identidad visual de una marca como Logo, papelería, diseño web, naming, elementos gráficos, merchandising, entre otros.",
+    "alt": "Branding Icon"
+  },
+  {
+    "id": 2,
+    "img": "Net_icon",
+    "title": "Gestión de redes",
+    "paragraph": "Creación de contenido orgánico y publicitario para redes, programación de publicaciones y automatización de mensajes, al igual que el desarrollo se copies para redes.",
+    "alt": "Gestion de Redes Icon"
+  },
+  {
+    "id": 3,
+    "img": "Marketing_icon",
+    "title": "Marketing",
+    "paragraph": "Creación de estrategias, en redes sociales, para la generación de Leads y contenido orgánico. Planes estratégicos para la organizacióninterna de la marca.",
+    "alt": "Marketing Icon"
+  }
+]
