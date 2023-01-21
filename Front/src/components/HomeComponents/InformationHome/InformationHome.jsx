@@ -71,27 +71,22 @@ function InformationHome() {
           style={{ borderLeft: "1px solid #fff" }}
         >
           <p className="text-white text-[12px] lg:text-[19px]">
-            Somos una agencia creativa que brinda soluciones innovadoras
-            mediante estrategias de marketing acompañada de la creación de
-            identidades visuales fuertes y efectivas. Gestionamos y diseñamos
-            feeds de redes.
+            Somos una agencia creativa que brinda soluciones innovadoras mediante estrategias de marketing acompañadas de la creación de identidades visuales fuertes y efectivas. 
             <br /> <br />
-            La Agencia gravity brinda servicios de diversas disciplinas con el
-            objetivo de trabajar en equipo, haciéndolo de manera integral para
-            el beneficio de sus clientes.
+            Agencia Gravity brinda servicios de diversas disciplinas con el objetivo de trabajar en equipo, haciéndolo de manera integral para el beneficio de sus clientes.
           </p>
         </div>
         <motion.picture
           initial="offscreen"
           whileInView="onscreen"
           viewport={{ once: false, amount: 1 }}
-          className="absolute w-[13%] min-w-[80px] bottom-0 right-0 flex justify-center items-center"
+          className="absolute w-[12%] min-w-[80px] bottom-0 right-0 flex justify-center items-center"
         >
           <img src={images.light} alt="Luces" className="z-10" />
           <motion.img
             src={images.brillo}
             alt="Brillo"
-            className="absolute top-0 right-2 lg:right-4"
+            className="absolute top-0 right-0 lg:right-4"
             variants={cardVariants}
           />
         </motion.picture>

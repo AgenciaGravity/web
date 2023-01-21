@@ -17,14 +17,14 @@ function AboutHeader() {
             </h3>
             <p className="hidden text-white max-w-[450px] text-[12px] sm:block lg:text-[17px] lg:max-w-[700px]">
               Somos una agencia creativa que brinda soluciones innovadoras
-              mediante estrategias de marketing acompañada de la creación de
-              identidades visuales fuertes y efectivas. Gestionamos y diseñamos
-              feeds de redes.
+              mediante estrategias de marketing acompañadas de la creación de
+              identidades visuales fuertes y efectivas.
               <br />
               <br />
-              La Agencia gravity brinda servicios de diversas disciplinas con el
-              objetivo de trabajar en equipo, haciéndolo de manera integral para
-              el beneficio de sus clientes.
+              Gestionamos y diseñamos feeds de redes. La Agencia Gravity brinda
+              servicios de diversas disciplinas con el objetivo de trabajar en
+              equipo, haciéndolo de manera integral para el beneficio de sus
+              clientes.
             </p>
           </div>
           <aside className="flex justify-between items-center gap-[20px]">
@@ -35,14 +35,14 @@ function AboutHeader() {
             />
             <p className="text-white text-[10px] sm:hidden">
               Somos una agencia creativa que brinda soluciones innovadoras
-              mediante estrategias de marketing acompañada de la creación de
-              identidades visuales fuertes y efectivas. Gestionamos y diseñamos
-              feeds de redes.
+              mediante estrategias de marketing acompañadas de la creación de
+              identidades visuales fuertes y efectivas.
               <br />
               <br />
-              La Agencia gravity brinda servicios de diversas disciplinas con el
-              objetivo de trabajar en equipo, haciéndolo de manera integral para
-              el beneficio de sus clientes.
+              Gestionamos y diseñamos feeds de redes. La Agencia Gravity brinda
+              servicios de diversas disciplinas con el objetivo de trabajar en
+              equipo, haciéndolo de manera integral para el beneficio de sus
+              clientes.
             </p>
           </aside>
           <div className="hidden w-[50px] rounded-l-[20px] h-full bg-naranja absolute top-0 right-0 sm:block lg:rounded-l-[25px]"></div>

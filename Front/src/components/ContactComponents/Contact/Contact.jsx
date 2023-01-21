@@ -58,10 +58,7 @@ function SectionContact() {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.behance.net/gallery/150687073/Agencia-Gravity"
-                target="_blank"
-              >
+              <a href="https://www.behance.net/gravityagencia" target="_blank">
                 <img
                   className="aspect-square w-[32px]"
                   src={images.Be_icon}
@@ -107,9 +104,13 @@ function SectionContact() {
           <p className="text-white mb-[20px] text-[10px] sm:text-[16px]">
             contacto@agenciagravity.com
           </p>
-            <a className="hover:scale-110 duration-300 bg-naranja text-azul rounded-3xl p-1 font-bold lg:w-full w-32 sm:w-48" href="mailto:contacto@agenciagravity.com?subject=Quiero%20informacion&body=Deseo%20información%20sobre%20como%20mejorar%20mi%20marca">
-              Enviar email
-            </a>
+          <a
+            className="hover:scale-110 duration-300 bg-naranja text-azul rounded-3xl p-1 font-bold lg:w-full w-32 sm:w-48"
+            href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXMnBNZjMhVgHfTtXcwnMhDfkrgjxDHfzZGwzmRDtsvSnmnkGFvzxJVvwbgXnCMQzvhXw"
+            target="_blank"
+          >
+            Enviar email
+          </a>
         </div>
       </div>
     </div>

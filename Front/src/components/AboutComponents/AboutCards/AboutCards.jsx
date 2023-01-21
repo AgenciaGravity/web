@@ -12,7 +12,7 @@ function AboutCards() {
         </div>
         <div className="w-56 lg:w-full">
           <h4 className="text-naranja text-sm font-bold sm:text-2xl sm:text-center lg:text-4xl lg:py-3">
-            Mision
+            Misión
           </h4>
           <p className="text-white text-xs sm:text-sm sm:text-center lg:text-lg lg:px-4">
             Conseguir que usted tome el control de su marca mediante estrategias
@@ -27,7 +27,7 @@ function AboutCards() {
         </div>
         <div className="w-56 lg:w-full">
           <h4 className="text-naranja text-sm font-bold sm:text-2xl sm:text-center lg:text-4xl lg:py-3">
-            Vision
+            Visión
           </h4>
           <p className="text-white text-xs sm:text-sm sm:text-center lg:text-lg lg:px-4">
             Vamos a lo alto, nos enfocamos en ser una agencia de publicidad y

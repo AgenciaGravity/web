@@ -70,16 +70,17 @@
 input[type]:checked ~ span.top {
   transform: rotate(45deg);
   transform-origin: top left;
-  width: 31px;
-  left: 5px;
+  width: 29px;
+  height: 5px;
+  left: 4px;
 }
 
 input[type]:checked ~ span.bottom {
   transform: rotate(-45deg);
   transform-origin: top left;
-  width: 31px;
-  bottom: -1px;
-  box-shadow: 0 0 5px #a7aeb4;
+  width: 29px;
+  height: 5px;
+  bottom: 0px;
 }
 
 input[type]:checked ~ span.middle {
