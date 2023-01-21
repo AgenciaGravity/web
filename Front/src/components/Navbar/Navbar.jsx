@@ -133,7 +133,7 @@ function Navbar() {
             </li>
             <li className="w-8 aspect-square">
               <a
-                href="https://www.behance.net/gallery/150687073/Agencia-Gravity"
+                href="https://www.behance.net/gravityagencia"
                 target="_blank"
               >
                 <img src={images.Be_icon} alt="Be" />

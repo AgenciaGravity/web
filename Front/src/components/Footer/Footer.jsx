@@ -82,7 +82,7 @@ function Footer({ links }) {
             </li>
             <li>
               <a
-                href="https://www.behance.net/gravityagencia"
+                href=" https://www.behance.net/gravityagencia"
                 target="_blank"
                 className="flex gap-0.5	"
               >
@@ -161,8 +161,9 @@ function Footer({ links }) {
           <ul>
             <li>
               <a
-                href="mailto:contacto@agenciagravity.com?subject=Quiero%20informacion&body=Deseo%20información%20sobre%20como%20mejorar%20mi%20marca"
+                href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXMnBNZjMhVgHfTtXcwnMhDfkrgjxDHfzZGwzmRDtsvSnmnkGFvzxJVvwbgXnCMQzvhXw"
                 className="flex align-middle gap-1 text-xs mb-2 lg:text-base"
+                target="_blank"
               >
                 <img src={images.Arrow_List} width="8px" />{" "}
                 contacto@agenciagravity.com
