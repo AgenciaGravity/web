@@ -21,7 +21,7 @@ function StartHome() {
 
     await axios
       .post("https://apigravity.agenciagravity.com/api/v1/form-yellow", e)
-      .then(() => savedData = true)
+      .then(() => (savedData = true))
       .catch(() => setMessage("Ocurrio un error, intenta de nuevo."));
 
     if (savedData) {
@@ -84,7 +84,12 @@ function StartHome() {
               <h4 className="ml-5 text-[13px] text-white">{message}</h4>
               <button className="hover:scale-110 duration-300 text-[12.5px] bg-naranja text-azul font-bold flex py-1 px-3 rounded-2xl justify-between items-center gap-6 lg:text-[15px]">
                 Enviar
-                <img src={images.Arrow} alt="Flechita" className="w-[13px]" />
+                <img
+                  src={images.Arrow.img}
+                  alt={images.Arrow.info}
+                  title={images.Arrow.info}
+                  className="w-[13px]"
+                />
               </button>
             </div>
           </form>
@@ -102,8 +107,9 @@ function StartHome() {
             </p>
           </div>
           <img
-            src={images.Human_010}
-            alt="Human Gravity"
+            src={images.Human_010.img}
+            title={images.Human_010.info}
+            alt={images.Human_010.info}
             className="w-[135px] absolute -bottom-3 right-[3%] z-10 lg:w-[245px] lg:-bottom-[21px] lg:right-2"
           />
           <div className="w-[18%] rounded-l-[20px] h-full bg-naranja absolute top-0 right-0 lg:rounded-l-[25px]"></div>

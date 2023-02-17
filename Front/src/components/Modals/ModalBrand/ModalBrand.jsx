@@ -91,8 +91,9 @@ function ModalBrand({ closeModal, dataCard }) {
             </div>
             <div className="w-[30%] aspect-square bg-white rounded-full flex justify-center items-center p-2 absolute right-0 sm:w-[100px] lg:w-[150px]">
               <img
-                src={images[dataCard.img]}
-                alt={dataCard.alt}
+                src={images[dataCard.img].img}
+                alt={images[dataCard.img].info}
+                title={images[dataCard.img].info}
                 className="w-[70%]"
               />
             </div>
@@ -152,7 +153,7 @@ function ModalBrand({ closeModal, dataCard }) {
               <h4 className="ml-5 text-[13px] text-white">{message}</h4>
               <button className="bg-naranja flex py-1 px-3 items-center gap-2 self-end rounded-2xl font-bold text-[13px] lg:text-[16px]">
                 Enviar{" "}
-                <img src={images.Arrow} alt="Arrow" className="w-[10px]" />
+                <img src={images.Arrow.img} alt={images.Arrow.info} title={images.Arrow.info} className="w-[10px]" />
               </button>
             </div>
           </form>

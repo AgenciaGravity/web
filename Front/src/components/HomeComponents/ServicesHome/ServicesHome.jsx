@@ -29,8 +29,9 @@ function ServicesHome() {
             onClick={() => openModalServices(card)}
           >
             <img
-              src={images[card.img]}
-              alt={card.alt}
+              src={images[card.img].img}
+              alt={images[card.img].info}
+              title={images[card.img].info}
               className="w-[70px] lg:w-[111px] lg:h-[130px]"
             />
             <div>

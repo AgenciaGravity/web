@@ -17,8 +17,9 @@ function Footer({ links }) {
           <a href="/">
             <img
               className="w-28 lg:w-52 lg:pb-4"
-              src={images.logo}
-              alt="Logo"
+              src={images.logo.img}
+              alt={images.logo.info}
+              title={images.logo.info}
             />
           </a>
           <ul className="hidden sm:block mt-2">
@@ -31,7 +32,13 @@ function Footer({ links }) {
                   duration={1000}
                   className="flex align-middle gap-1 text-xs mb-2 lg:text-base cursor-pointer"
                 >
-                  <img src={images.Arrow_List} width="8px" /> {link.title}
+                  <img
+                    src={images.Arrow_List.img}
+                    alt={images.Arrow_List.info}
+                    title={images.Arrow_List.info}
+                    width="8px"
+                  />{" "}
+                  {link.title}
                 </Link>
               </li>
             ))}
@@ -49,14 +56,17 @@ function Footer({ links }) {
                 className="flex gap-0.5	"
               >
                 <img
-                  src={images.Arrow_List}
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
                   width="8px"
                   className="hidden lg:block lg:mr-1"
                 />
                 <span className="hidden lg:block">Instagram</span>
                 <img
-                  src={images.Instagram_light}
-                  alt="Instagram_icon"
+                  src={images.Instagram_light.img}
+                  title={images.Instagram_light.info}
+                  alt={images.Instagram_light.info}
                   className="w-7 lg:hidden"
                 />
               </a>
@@ -68,14 +78,17 @@ function Footer({ links }) {
                 className="flex gap-0.5"
               >
                 <img
-                  src={images.Arrow_List}
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
                   width="8px"
                   className="hidden lg:block lg:mr-1"
                 />
                 <span className="hidden lg:block">Facebook</span>
                 <img
-                  src={images.Facebook_light}
-                  alt="Facebook_icon"
+                  src={images.Facebook_light.img}
+                  alt={images.Facebook_light.info}
+                  title={images.Facebook_light.info}
                   className="w-7 lg:hidden"
                 />
               </a>
@@ -87,14 +100,17 @@ function Footer({ links }) {
                 className="flex gap-0.5	"
               >
                 <img
-                  src={images.Arrow_List}
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
                   width="8px"
                   className="hidden lg:block lg:mr-1"
                 />
                 <span className="hidden lg:block">Behance</span>
                 <img
-                  src={images.Be_light}
-                  alt="Behance_icon"
+                  src={images.Be_light.img}
+                  title={images.Be_light.info}
+                  alt={images.Be_light.info}
                   className="w-7 lg:hidden"
                 />
               </a>
@@ -106,14 +122,17 @@ function Footer({ links }) {
                 className="flex gap-0.5	"
               >
                 <img
-                  src={images.Arrow_List}
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
                   width="8px"
                   className="hidden lg:block lg:mr-1"
                 />
                 <span className="hidden lg:block">Pinterest</span>
                 <img
-                  src={images.Pinterest_light}
-                  alt="Pinterest_icon"
+                  src={images.Pinterest_light.img}
+                  alt={images.Pinterest_light.info}
+                  title={images.Pinterest_light.info}
                   className="w-7 lg:hidden"
                 />
               </a>
@@ -125,14 +144,17 @@ function Footer({ links }) {
                 className="flex gap-0.5	"
               >
                 <img
-                  src={images.Arrow_List}
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
                   width="8px"
                   className="hidden lg:block lg:mr-1"
                 />
                 <span className="hidden lg:block">Tik Tok</span>
                 <img
-                  src={images.Tik_tok_light}
-                  alt="Instagram_icon"
+                  src={images.Tik_tok_light.img}
+                  alt={images.Tik_tok_light.info}
+                  title={images.Tik_tok_light.info}
                   className="w-7 lg:hidden"
                 />
               </a>
@@ -144,14 +166,17 @@ function Footer({ links }) {
                 className="flex gap-0.5	"
               >
                 <img
-                  src={images.Arrow_List}
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
                   width="8px"
                   className="hidden lg:block lg:mr-1"
                 />{" "}
                 <span className="hidden lg:block">LinkedIn</span>
                 <img
-                  src={images.Linkdln_light}
-                  alt="Instagram_icon"
+                  src={images.Linkdln_light.img}
+                  alt={images.Linkdln_light.info}
+                  title={images.Linkdln_light.info}
                   className="w-7 lg:hidden"
                 />
               </a>
@@ -165,21 +190,34 @@ function Footer({ links }) {
                 className="flex align-middle gap-1 text-xs mb-2 lg:text-base"
                 target="_blank"
               >
-                <img src={images.Arrow_List} width="8px" />{" "}
+                <img
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
+                  width="8px"
+                />{" "}
                 contacto@agenciagravity.com
               </a>
             </li>
           </ul>
         </div>
         <div className="footerThirdColumn hidden sm:block opacity-0 sm:pt-[27px] lg:pt-[60px]">
-          <h3 className="text-xs lg:text-[16px] mb-2">Forma parte del equipo:</h3>
+          <h3 className="text-xs lg:text-[16px] mb-2">
+            Forma parte del equipo:
+          </h3>
           <ul>
             <li>
               <a
                 href="#"
                 className="flex align-middle gap-1 text-xs mb-2 lg:text-base"
               >
-                <img src={images.Arrow_List} width="8px" /> Postulate aquí
+                <img
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
+                  width="8px"
+                />{" "}
+                Postulate aquí
               </a>
             </li>
           </ul>
@@ -193,7 +231,12 @@ function Footer({ links }) {
           className="bg-naranja absolute right-2	-top-1/4 w-10 sm:w-[3%] max-w-[80px] aspect-square rounded-full border-4 border-solid border-white duration-300 hover:scale-125 z-20"
           onClick={() => scroll.scrollToTop()}
         >
-          <img src={images.Arrow_Footer} className="w-9/12 m-auto" />
+          <img
+            src={images.Arrow_Footer.img}
+            alt={images.Arrow_Footer.info}
+            title={images.Arrow_Footer.info}
+            className="w-9/12 m-auto"
+          />
         </button>
         <p className="text-xs">Web elaborada por Agencia Gravity</p>
         <p className="text-xs">Copyright © 2022 Agencia Gravity</p>

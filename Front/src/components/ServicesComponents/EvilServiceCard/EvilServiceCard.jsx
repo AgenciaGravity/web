@@ -35,8 +35,9 @@ function EvilServiceCard({ data }) {
           <div className="flex justify-center items-center aspect-square bg-white rounded-full w-20 lg:w-[120px]">
             <img
               className="w-[70%]"
-              src={images[data.img]}
-              alt="Imagen de Servicios"
+              src={images[data.img].img}
+              alt={images[data.img].info}
+              title={images[data.img].info}
             />
           </div>
         </div>

@@ -163,6 +163,24 @@ input[type]:checked ~ span.middle {
   background-color: #0d2633;
 }
 
+/* CALENDARY */
+
+.colStart-2{
+  grid-column-start: 1;
+}
+.colStart-3{
+  grid-column-start: 2;
+}
+.colStart-4{
+  grid-column-start: 3;
+}
+.colStart-5{
+  grid-column-start: 4;
+}
+.colStart-6{
+  grid-column-start: 5;
+}
+
 @media (min-width: 640px) {
   ::-webkit-scrollbar {
     display: block;

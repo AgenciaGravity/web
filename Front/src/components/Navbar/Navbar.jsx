@@ -23,7 +23,12 @@ function Navbar() {
           to="/"
           onClick={() => setOpenMenu(false)}
         >
-          <img className="w-32" src={images.Logo_nav} alt="Logo" />
+          <img
+            className="w-32"
+            src={images.Logo_nav.img}
+            alt={images.Logo_nav.info}
+            title={images.Logo_nav.info}
+          />
         </Link>
         <label
           htmlFor="check"
@@ -45,7 +50,10 @@ function Navbar() {
           style={{ right: openMenu ? "0px" : "-100%" }}
         >
           <ul className="w-full px-10 flex flex-col text-lg text-center items-center lg:gap-5 lg:flex-row lg:mt-0">
-            <li onClick={handleToggle} className="border-b-2 w-[80%] py-5 lg:hidden">
+            <li
+              onClick={handleToggle}
+              className="border-b-2 w-[80%] py-5 lg:hidden"
+            >
               <Link
                 to="/"
                 className={
@@ -57,7 +65,10 @@ function Navbar() {
                 Inicio
               </Link>
             </li>
-            <li onClick={handleToggle} className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0">
+            <li
+              onClick={handleToggle}
+              className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0"
+            >
               <Link
                 to="/nosotros"
                 className={
@@ -70,7 +81,10 @@ function Navbar() {
               </Link>
             </li>
             <li className="hidden lg:flex">|</li>
-            <li onClick={handleToggle} className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0">
+            <li
+              onClick={handleToggle}
+              className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0"
+            >
               <Link
                 to="/servicios"
                 className={
@@ -83,7 +97,10 @@ function Navbar() {
               </Link>
             </li>
             <li className="hidden lg:flex">|</li>
-            <li onClick={handleToggle} className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0">
+            <li
+              onClick={handleToggle}
+              className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0"
+            >
               <Link
                 to="/clientes"
                 className={
@@ -96,7 +113,10 @@ function Navbar() {
               </Link>
             </li>
             <li className="hidden lg:flex">|</li>
-            <li onClick={handleToggle} className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0">
+            <li
+              onClick={handleToggle}
+              className="border-b-2 w-[80%] py-5 lg:py-0 lg:w-auto lg:border-b-0"
+            >
               <Link
                 to="/contacto"
                 className={
@@ -112,7 +132,7 @@ function Navbar() {
           <ul className="flex gap-5">
             <li className="w-8 aspect-square">
               <a href="https://www.facebook.com/SomosGravity" target="_blank">
-                <img src={images.Facebook_icon} alt="Facebook" />
+                <img src={images.Facebook_icon.img} alt={images.Facebook_icon.info} title={images.Facebook_icon.info} />
               </a>
             </li>
             <li className="w-8 aspect-square">
@@ -120,7 +140,7 @@ function Navbar() {
                 href="https://www.linkedin.com/company/gravity-agencia-de-marketing-y-publicidad/?viewAsMember=true/"
                 target="_blank"
               >
-                <img src={images.Linkdln_icon} alt="Linkdln" />
+                <img src={images.Linkdln_icon.img} alt={images.Linkdln_icon.info} title={images.Linkdln_icon.info} />
               </a>
             </li>
             <li className="w-8 aspect-square">
@@ -128,15 +148,12 @@ function Navbar() {
                 href="https://www.instagram.com/agencia_gravity/"
                 target="_blank"
               >
-                <img src={images.Instagram_icon} alt="Instagram" />
+                <img src={images.Instagram_icon.img} alt={images.Instagram_icon.info} title={images.Instagram_icon.info} />
               </a>
             </li>
             <li className="w-8 aspect-square">
-              <a
-                href="https://www.behance.net/gravityagencia"
-                target="_blank"
-              >
-                <img src={images.Be_icon} alt="Be" />
+              <a href="https://www.behance.net/gravityagencia" target="_blank">
+                <img src={images.Be_icon.img} alt={images.Be_icon.info} title={images.Be_icon.info} />
               </a>
             </li>
           </ul>

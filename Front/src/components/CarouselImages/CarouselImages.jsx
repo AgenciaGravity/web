@@ -1,6 +1,7 @@
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
+import images from "../../assets/imagenes";
 
 const settings = {
   dots: true,
@@ -24,13 +25,18 @@ const mobileSettings = {
 };
 
 function CarouselImages({ img }) {
+  console.log(img);
   return (
     <div className="max-w-7xl m-auto relative carousel__container">
       <Slider className="slider mb-20 hidden md:block" {...settings}>
         {img.mockup.map((i) => {
           return (
             <div className="slider__item" key={img.mockup.indexOf(i)}>
-              <img src={i} />
+              <img
+                src={images[i].img}
+                alt={images[i].info}
+                title={images[i].info}
+              />
             </div>
           );
         })}
@@ -39,7 +45,11 @@ function CarouselImages({ img }) {
         {img.mockup.map((i) => {
           return (
             <div className="slider__item" key={img.mockup.indexOf(i)}>
-              <img src={i} />
+              <img
+                src={images[i].img}
+                alt={images[i].info}
+                title={images[i].info}
+              />
             </div>
           );
         })}

@@ -20,18 +20,18 @@ import {
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation, Pagination, Scrollbar, A11y, Thumbs } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Thumbs } from "swiper";
 import axios from "axios";
 import emailjs from "@emailjs/browser";
 
 let colStartClasses = [
-  "col-start-1",
-  "col-start-2",
-  "col-start-3",
-  "col-start-4",
-  "col-start-5",
-  "col-start-6",
-  "col-start-7",
+  "colStart-1",
+  "colStart-2",
+  "colStart-3",
+  "colStart-4",
+  "colStart-5",
+  "colStart-6",
+  "colStart-7",
 ];
 
 function classNames(...classes) {
@@ -107,7 +107,7 @@ function ModalDetails({ closeModal, data }) {
   return (
     <AnimatePresence>
       <motion.div
-        className="fixed top-0 left-0 w-full h-screen bg-backdrop-modal flex justify-center items-center z-30 px-5 py-16"
+        className="fixed top-0 left-0 w-full h-screen bg-backdrop-modal flex justify-center items-center z-30 p-5 py-16"
         transition={{ duration: 0.3 }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -117,7 +117,7 @@ function ModalDetails({ closeModal, data }) {
           className="w-full h-screen absolute"
           onClick={() => closeModal(false)}
         ></div>
-        <div className="bg-white overflow-y-scroll overflow-x-hidden shadow-services-card w-full h-full relative p-6 rounded-2xl flex flex-col items-center sm:flex-row sm:items-start sm:gap-[20px] max-w-5xl lg:gap-10 sm:justify-end sm:h-auto">
+        <div className="bg-white overflow-y-scroll overflow-x-hidden shadow-services-card w-full h-full relative p-6 rounded-2xl flex flex-col items-center sm:flex-row sm:items-start sm:gap-[20px] max-w-5xl lg:gap-10 sm:justify-end">
           <button
             className="bg-input-one w-5 h-5 rounded-2xl absolute top-2 right-2"
             onClick={() => closeModal("none")}
@@ -126,20 +126,23 @@ function ModalDetails({ closeModal, data }) {
           </button>
           <div className="w-full sm:max-w-[200px] sm:self-start lg:max-w-[30%] lg:sticky lg:top-0 lg:left-0">
             <img
-              src={images.Glovo_icon____gravity}
-              alt="Glovo Gravity"
+              src={images.Glovo_icon____gravity.img}
+              alt={images.Glovo_icon____gravity.info}
+              title={images.Glovo_icon____gravity.info}
               className="w-[60px] sm:w-[100px] m-auto"
             />
             <div className="w-[65%] relative flex flex-col justify-start items-center self-start mt-4 p-3 rounded-2xl shadow-services-card sm:w-full ">
               <img
-                src={images.Human_014}
-                alt="Astronaut"
+                src={images.Human_014.img}
+                title={images.Human_014.info}
+                alt={images.Human_014.info}
                 className="absolute -right-[70px] w-[101px] sm:hidden"
               />
               <span className="flex items-center w-full text-[13px] lg:text-[16px]">
                 <img
-                  src={images.Glovo_icon____gravity}
-                  alt="Glovo Gravity"
+                  src={images.Glovo_icon____gravity.img}
+                  alt={images.Glovo_icon____gravity.info}
+                  title={images.Glovo_icon____gravity.info}
                   className="w-[30px] self-start lg:w-[50px]"
                 />
                 Agencia Gravity
@@ -157,7 +160,13 @@ function ModalDetails({ closeModal, data }) {
                   confirmación.
                 </p>
               </div>
-              <div className={changeForm ? "sm:h-[320px] lg:h-[115px]" : "sm:h-[170px] lg:h-[220px]"}></div>
+              <div
+                className={
+                  changeForm
+                    ? "sm:h-[320px] lg:h-[115px]"
+                    : "sm:h-[170px] lg:h-[220px]"
+                }
+              ></div>
               <span className="text-[8px] w-full mt-3 lg:text-[12px]">
                 951378145 / contacto@agenciagravity.com
               </span>
@@ -179,13 +188,6 @@ function ModalDetails({ closeModal, data }) {
                     </h3>
                     <div className="w-full flex flex-col lg:flex-row lg:gap-5">
                       <div className="flex justify-center items-center relative w-full">
-                        <button
-                          type="button"
-                          onClick={previousMonth}
-                          className="flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500 absolute -left-6"
-                        >
-                          &lt;
-                        </button>
                         <div className="p-3 rounded-2xl shadow-services-card w-full">
                           <div className="flex items-center mb-3">
                             <h2 className="flex-auto text-[13px] font-bold text-azul lg:text-[20px] capitalize">
@@ -193,113 +195,149 @@ function ModalDetails({ closeModal, data }) {
                                 locale: es,
                               })}
                             </h2>
+                            <div className="flex gap-10 m-3">
+                              <button
+                                onClick={previousMonth}
+                                className="max-w-[20px]"
+                              >
+                                <img
+                                  src={images.ArrowLeft.img}
+                                  alt={images.ArrowLeft.info}
+                                  title={images.ArrowLeft.info}
+                                />
+                              </button>
+                              <button
+                                onClick={nextMonth}
+                                className="max-w-[20px]"
+                              >
+                                <img
+                                  src={images.Arrow.img}
+                                  alt={images.Arrow.info}
+                                  title={images.Arrow.info}
+                                />
+                              </button>
+                            </div>
                           </div>
-                          <div className="grid grid-cols-7 text-[13px] leading-6 text-center text-azul font-bold lg:text-[20px]">
-                            <div>D</div>
+                          <div className="grid grid-cols-5 text-[13px] leading-6 text-center text-azul font-bold lg:text-[20px]">
                             <div>L</div>
                             <div>M</div>
                             <div>X</div>
                             <div>J</div>
                             <div>V</div>
-                            <div>S</div>
                           </div>
-                          <div className="grid grid-cols-7 mt-2 text-sm">
-                            {days.map((day, dayIdx) => (
-                              <div
-                                key={day.toString()}
-                                className={classNames(
-                                  dayIdx === 0 && colStartClasses[getDay(day)],
-                                  format(day, "eeee") == "Saturday" &&
-                                    "opacity-40 pointer-events-none	",
-                                  format(day, "eeee") == "Sunday" &&
-                                    "opacity-40 pointer-events-none	",
-                                  "py-1.5"
-                                )}
-                              >
-                                <button
-                                  type="button"
-                                  onClick={() => setSelectedDay(day)}
-                                  className={classNames(
-                                    isEqual(day, selectedDay) && "text-white",
-                                    !isEqual(day, selectedDay) &&
-                                      isToday(day) &&
-                                      "text-azul font-bold text-[15px]",
-                                    !isEqual(day, selectedDay) &&
-                                      !isToday(day) &&
-                                      isSameMonth(day, firstDayCurrentMonth) &&
-                                      "text-gray-900",
-                                    !isEqual(day, selectedDay) &&
-                                      !isToday(day) &&
-                                      !isSameMonth(day, firstDayCurrentMonth) &&
-                                      "text-gray-400",
-                                    isEqual(day, selectedDay) &&
-                                      isToday(day) &&
-                                      "bg-red-500",
-                                    isEqual(day, selectedDay) &&
-                                      !isToday(day) &&
-                                      "bg-azul",
-                                    !isEqual(day, selectedDay) &&
-                                      "hover:bg-gray-200",
-                                    (isEqual(day, selectedDay) ||
-                                      isToday(day)) &&
-                                      "font-semibold",
-                                    "mx-auto flex h-6 w-6 items-center justify-center rounded-full text-[13px] lg:text-[16px] lg:h-10 lg:w-10"
-                                  )}
-                                >
-                                  <time dateTime={format(day, "yyyy-MM-dd")}>
-                                    {format(day, "d")}
-                                  </time>
-                                </button>
-                              </div>
-                            ))}
+                          <div className="grid grid-cols-5 mt-2 text-sm">
+                            {days.map((day, dayIdx) => {
+                              if (
+                                format(day, "eeee") == "Saturday" ||
+                                format(day, "eeee") == "Sunday"
+                              ) {
+                                return;
+                              } else {
+                                return (
+                                  <div
+                                    key={day.toString()}
+                                    className={classNames(
+                                      dayIdx === 0 &&
+                                        colStartClasses[getDay(day)],
+                                      "py-1.5"
+                                    )}
+                                  >
+                                    <button
+                                      type="button"
+                                      onClick={() => setSelectedDay(day)}
+                                      className={classNames(
+                                        isEqual(day, selectedDay) &&
+                                          "text-white",
+                                        !isEqual(day, selectedDay) &&
+                                          isToday(day) &&
+                                          "text-azul font-bold text-[15px]",
+                                        !isEqual(day, selectedDay) &&
+                                          !isToday(day) &&
+                                          isSameMonth(
+                                            day,
+                                            firstDayCurrentMonth
+                                          ) &&
+                                          "text-gray-900",
+                                        !isEqual(day, selectedDay) &&
+                                          !isToday(day) &&
+                                          !isSameMonth(
+                                            day,
+                                            firstDayCurrentMonth
+                                          ) &&
+                                          "text-gray-400",
+                                        isEqual(day, selectedDay) &&
+                                          isToday(day) &&
+                                          "bg-red-500",
+                                        isEqual(day, selectedDay) &&
+                                          !isToday(day) &&
+                                          "bg-azul",
+                                        !isEqual(day, selectedDay) &&
+                                          "hover:bg-gray-200",
+                                        (isEqual(day, selectedDay) ||
+                                          isToday(day)) &&
+                                          "font-semibold",
+                                        "mx-auto flex h-6 w-6 items-center justify-center rounded-full text-[13px] lg:text-[16px] lg:h-10 lg:w-10"
+                                      )}
+                                    >
+                                      <time
+                                        dateTime={format(day, "yyyy-MM-dd")}
+                                      >
+                                        {format(day, "d")}
+                                      </time>
+                                    </button>
+                                  </div>
+                                );
+                              }
+                            })}
                           </div>
                           <h3 className="mt-4 flex-auto text-[13px] font-bold text-azul lg:text-[20px] capitalize">
                             Hora Perú
                           </h3>
                         </div>
-                        <button
-                          onClick={nextMonth}
-                          type="button"
-                          className="flex items-center justify-center p-1.5 text-gray-400 hover:text-gray-500 absolute -right-6"
-                        >
-                          &gt;
-                        </button>
                       </div>
-                      <Swiper
-                     modules={[Navigation, Thumbs]}
-                      navigation={true}
-                      grabCursor={true}
-                        direction={"vertical"}
-                        slidesPerView={screen.width >= 1124 ? 5 : 4}
-                        className="mt-4 cursor-pointer py-1 px-2 max-w-[170px] w-full h-[270px] lg:h-[400px] lg:m-0 "
-                      >
-                        {hours[typeHour].map((i, index) => (
-                          <SwiperSlide
-                            key={index}
-                            onClick={() => setSelectedHour(index)}
-                          >
-                            <div
-                              className={`relative flex justify-center items-center duration-300 shadow-services-card rounded-2xl py-2 ${
-                                index === selectedHour
-                                  ? "bg-azul text-white scale-110 font-bold"
-                                  : ""
-                              }`}
+                      <div className="mt-4 cursor-pointer mx-auto  w-full">
+                        <p className="capitalize text-azul mb-6">
+                          {format(selectedDay, "EEEE dd 'de' MMMM", {
+                            locale: es,
+                          })}
+                        </p>
+                        <Swiper
+                          modules={[Navigation, Thumbs]}
+                          navigation={true}
+                          grabCursor={true}
+                          direction={"vertical"}
+                          slidesPerView={screen.width >= 1124 ? 5 : 4}
+                          className="w-full max-w-[170px] h-[270px]  py-1 px-2 lg:h-[400px] lg:m-0 "
+                        >
+                          {hours[typeHour].map((i, index) => (
+                            <SwiperSlide
+                              key={index}
+                              onClick={() => setSelectedHour(index)}
                             >
-                              {i.view}{" "}
-                              <img
-                                onClick={() => setChangeForm(false)}
-                                src={images.Arrow_orange}
-                                alt="Arrow Orange"
-                                className={`w-[16px] opacity-0 absolute right-3 ${
+                              <div
+                                className={`relative flex justify-center items-center duration-300 shadow-services-card rounded-2xl py-2 ${
                                   index === selectedHour
-                                    ? "block opacity-100"
+                                    ? "bg-azul text-white scale-110 font-bold"
                                     : ""
                                 }`}
-                              />
-                            </div>
-                          </SwiperSlide>
-                        ))}
-                      </Swiper>
+                              >
+                                {i.view}{" "}
+                                <img
+                                  onClick={() => setChangeForm(false)}
+                                  src={images.Arrow_orange.img}
+                                  alt={images.Arrow_orange.info}
+                                  title={images.Arrow_orange.info}
+                                  className={`w-[16px] opacity-0 absolute right-3 ${
+                                    index === selectedHour
+                                      ? "block opacity-100"
+                                      : ""
+                                  }`}
+                                />
+                              </div>
+                            </SwiperSlide>
+                          ))}
+                        </Swiper>
+                      </div>
                     </div>
                   </div>
                 ) : (

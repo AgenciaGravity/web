@@ -20,7 +20,9 @@ function HeadContact() {
           id="scheduleHere"
         >
           <img
-            src={images.flag}
+            src={images.flag.img}
+            title={images.flag.info}
+            alt={images.flag.info}
             className="w-[100px] absolute bottom-0 left-5 sm:left-16 sm:w-[166px] lg:-left-16 lg:w-[280px]"
           />
           <div className="flex flex-col gap-3 justify-center items-center pr-5">

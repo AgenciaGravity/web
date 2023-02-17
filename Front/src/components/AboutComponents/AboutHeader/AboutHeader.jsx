@@ -30,8 +30,9 @@ function AboutHeader() {
           <aside className="flex justify-between items-center gap-[20px]">
             <img
               className="max-w-[98px] z-10 w-full sm:max-w-[198px] sm:mr-10 lg:mr-16 lg:w-[330px]"
-              src={images.Human_002}
-              alt="Human Gravity"
+              src={images.Human_002.img}
+              alt={images.Human_002.info}
+              title={images.Human_002.info}
             />
             <p className="text-white text-[10px] sm:hidden">
               Somos una agencia creativa que brinda soluciones innovadoras

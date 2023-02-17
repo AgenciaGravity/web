@@ -38,8 +38,9 @@ function ModalEbook({ closeModal }) {
             X
           </button>
           <img
-            src={images.astronautGift}
-            alt="Astronauta"
+            src={images.astronautGift.img}
+            alt={images.astronautGift.info}
+            title={images.astronautGift.info}
             className="hidden w-[200px] sm:block sm:w-[30%]"
           />
           <div>
@@ -133,8 +134,9 @@ function ModalEbook({ closeModal }) {
                   Obtener
                 </button>
                 <img
-                  src={images.Human_005}
-                  alt="Human"
+                  src={images.Human_005.img}
+                  alt={images.Human_005.info}
+                  title={images.Human_005.info}
                   className="w-[90px] absolute right-0 bottom-0 sm:hidden"
                 />
               </div>

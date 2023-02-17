@@ -35,17 +35,17 @@ function InformationHome() {
                 href="https://www.linkedin.com/company/gravity-agencia-de-marketing-y-publicidad/?viewAsMember=true"
                 target="_blank"
               >
-                <img src={images.Linkdln_light} alt="Linkdln" />
+                <img src={images.Linkdln_light.img} alt={images.Linkdln_light.info} title={images.Linkdln_light.info} />
               </a>
             </li>
             <li className="w-[23px] lg:w-[40px]">
               <a href="https://wa.me/message/A6KRC3PTRPNDO1" target="_blank">
-                <img src={images.Whatsapp_light} alt="Whatsapp" />
+                <img src={images.Whatsapp_light.img} alt={images.Whatsapp_light.info} title={images.Whatsapp_light.info} />
               </a>
             </li>
             <li className="w-[23px] lg:w-[40px]">
               <a href="https://www.facebook.com/SomosGravity" target="_blank">
-                <img src={images.Facebook_light} alt="Facebook" />
+                <img src={images.Facebook_light.img} alt={images.Facebook_light.info} title={images.Facebook_light.info} />
               </a>
             </li>
             <li className="w-[23px] lg:w-[40px]">
@@ -53,7 +53,7 @@ function InformationHome() {
                 href="https://www.instagram.com/agencia_gravity/"
                 target="_blank"
               >
-                <img src={images.Instagram_light} alt="Instagram" />
+                <img src={images.Instagram_light.img} alt={images.Instagram_light.info} title={images.Instagram_light.info} />
               </a>
             </li>
             <li className="w-[23px] lg:w-[40px] ">
@@ -61,7 +61,7 @@ function InformationHome() {
                 href="https://www.behance.net/gallery/150687073/Agencia-Gravity"
                 target="_blank"
               >
-                <img src={images.Be_light} alt="Be" />
+                <img src={images.Be_light.img} alt={images.Be_light.info} title={images.Be_light.info} />
               </a>
             </li>
           </ul>
@@ -71,9 +71,13 @@ function InformationHome() {
           style={{ borderLeft: "1px solid #fff" }}
         >
           <p className="text-white text-[12px] lg:text-[19px]">
-            Somos una agencia creativa que brinda soluciones innovadoras mediante estrategias de marketing acompañadas de la creación de identidades visuales fuertes y efectivas. 
+            Somos una agencia creativa que brinda soluciones innovadoras
+            mediante estrategias de marketing acompañadas de la creación de
+            identidades visuales fuertes y efectivas.
             <br /> <br />
-            Agencia Gravity brinda servicios de diversas disciplinas con el objetivo de trabajar en equipo, haciéndolo de manera integral para el beneficio de sus clientes.
+            Agencia Gravity brinda servicios de diversas disciplinas con el
+            objetivo de trabajar en equipo, haciéndolo de manera integral para
+            el beneficio de sus clientes.
           </p>
         </div>
         <motion.picture
@@ -82,10 +86,16 @@ function InformationHome() {
           viewport={{ once: false, amount: 1 }}
           className="absolute w-[12%] min-w-[80px] bottom-0 right-0 flex justify-center items-center"
         >
-          <img src={images.light} alt="Luces" className="z-10" />
+          <img
+            src={images.light.img}
+            alt={images.light.info}
+            title={images.light.info}
+            className="z-10"
+          />
           <motion.img
-            src={images.brillo}
-            alt="Brillo"
+            src={images.brillo.img}
+            alt={images.brillo.info}
+            title={images.brillo.info}
             className="absolute top-0 right-0 lg:right-4"
             variants={cardVariants}
           />

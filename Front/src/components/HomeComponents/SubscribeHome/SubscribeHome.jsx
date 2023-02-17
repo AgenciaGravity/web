@@ -39,8 +39,9 @@ function SubscribeHome() {
           <picture className="relative mr-1">
             <img
               className="w-full max-w-[145px] lg:max-w-[250px]"
-              src={images.Human_001}
-              alt="Astronauta"
+              src={images.Human_001.img}
+              alt={images.Human_001.info}
+              title={images.Human_001.info}
             />
             <span className="flex justify-center items-center text-[13px] w-[20%] h-[25%] absolute top-[15px] right-[3px] sm:text-[20px] lg:text-[35px] lg:top-[32px] lg:right-[6px]">
               {emoji === "normal" ? "😁" : emoji === "write" ? "🧐" : "🥳"}
@@ -66,9 +67,10 @@ function SubscribeHome() {
               ></input>
               <button>
                 <img
-                  src={images.Arrow}
+                  src={images.Arrow.img}
                   className="mr-3 w-[10px] cursor-pointer sm:w-[12px]"
-                  alt="Arrow"
+                  alt={images.Arrow.info}
+                  title={images.Arrow.info}
                 />
               </button>
             </div>
@@ -83,9 +85,10 @@ function SubscribeHome() {
           <div className="hidden sm:block sm:absolute bottom-0 -right-1">
             <div className="bg-azul w-14 aspect-square	flex justify-center items-center p-2 rounded-full sm:absolute -top-8 right-5 lg:w-24 lg:right-14 lg:-top-14">
               <img
-                src={images.circleCard}
+                src={images.circleCard.img}
                 className="w-full lg:w-[90%]"
-                alt="Message image"
+                alt={images.circleCard.info}
+                title={images.circleCard.info}
               />
             </div>
             <div className="bg-naranja shadow-services-card w-20 h-10 rounded-t-full lg:w-40 lg:h-20"></div>

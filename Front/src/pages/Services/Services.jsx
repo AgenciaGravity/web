@@ -89,14 +89,21 @@ function Services() {
               download="Hoja de servicios - Agencia Gravity"
               className="hover:scale-110 cursor-pointer duration-300 flex gap-3 w-[120px] sm:w-auto text-[14px] bg-naranja py-1 px-4 font-bold text-azul rounded-full mt-4 sm:text-[16px] lg:text-[22px] lg:px-10 lg:mt-0"
             >
-              Descargar <img src={images.Arrow} alt="Arrow Down" className="rotate-90"/>
+              Descargar{" "}
+              <img
+                src={images.Arrow.img}
+                alt={images.Arrow.info}
+                title={images.Arrow.info}
+                className="rotate-90"
+              />
             </a>
           </section>
           <section className="flex justify-around items-center sm:w-full">
             <img
               className="w-36 sm:w-40 lg:w-72"
-              src={images.Human_005}
-              alt="Human"
+              src={images.Human_005.img}
+              alt={images.Human_005.info}
+              title={images.Human_005.info}
             />
             <div className="hidden sm:flex sm:flex-col lg:w-3/5">
               {servicesData.map((e) => (
@@ -108,10 +115,7 @@ function Services() {
       </div>
       <div className="w-full flex flex-col justify-center items-center sm:hidden">
         {servicesData.map((e) => (
-          <ServiceCard
-            data={e}
-            key={e.id}
-          />
+          <ServiceCard data={e} key={e.id} />
         ))}
       </div>
       <div
@@ -174,7 +178,12 @@ function Services() {
             <div className="flex justify-between w-full">
               <h4 className="ml-5 text-[16px] text-white">{message}</h4>
               <button className="hover:scale-110 duration-300 flex gap-3 items-center bg-azul rounded-2xl text-white py-1 px-4 text-[10px] lg:self-end lg:text-[15px]">
-                Enviar <img src={images.Arrow_List} alt="Flechita" />
+                Enviar{" "}
+                <img
+                  src={images.Arrow_List.img}
+                  alt={images.Arrow_List.info}
+                  title={images.Arrow_List.info}
+                />
               </button>
             </div>
           </form>

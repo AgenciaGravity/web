@@ -35,8 +35,9 @@ function ModalAgendaAqui({ closeModal }) {
             X
           </button>
           <img
-            src={images.Glovo_icon____gravity}
-            alt="Glovo Gravity"
+            src={images.Glovo_icon____gravity.img}
+            alt={images.Glovo_icon____gravity.info}
+            title={images.Glovo_icon____gravity.info}
             className="w-[60px] sm:w-[100px]"
           />
           <h3 className="font-bold text-azul text-[14px] w-full] sm:text-[20px] lg:text-[24px]">
@@ -51,8 +52,9 @@ function ModalAgendaAqui({ closeModal }) {
                 className="hover:scale-105 duration-300 flex justify-start items-center gap-3 p-3 rounded-2xl shadow-services-card cursor-pointer"
               >
                 <img
-                  src={images.Glovo_icon____gravity}
-                  alt="Glovo Gravity"
+                  src={images.Glovo_icon____gravity.img}
+                  alt={images.Glovo_icon____gravity.info}
+                  title={images.Glovo_icon____gravity.info}
                   className="w-[30px] self-start"
                 />
                 <div>

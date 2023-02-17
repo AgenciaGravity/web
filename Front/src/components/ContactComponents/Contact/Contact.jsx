@@ -22,8 +22,9 @@ function SectionContact() {
               >
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Linkdln_icon}
-                  alt="Linkdln"
+                  src={images.Linkdln_icon.img}
+                  alt={images.Linkdln_icon.info}
+                  title={images.Linkdln_icon.info}
                 />
               </a>
             </li>
@@ -31,8 +32,9 @@ function SectionContact() {
               <a href="https://wa.me/message/A6KRC3PTRPNDO1" target="_blank">
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Whatssap_icon}
-                  alt="Whatssap"
+                  src={images.Whatssap_icon.img}
+                  alt={images.Whatssap_icon.info}
+                  title={images.Whatssap_icon.info}
                 />
               </a>
             </li>
@@ -40,8 +42,9 @@ function SectionContact() {
               <a href="https://www.facebook.com/SomosGravity" target="_blank">
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Facebook_icon}
-                  alt="Facebook"
+                  src={images.Facebook_icon.img}
+                  alt={images.Facebook_icon.info}
+                  title={images.Facebook_icon.info}
                 />
               </a>
             </li>
@@ -52,8 +55,9 @@ function SectionContact() {
               >
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Instagram_icon}
-                  alt="Instagram"
+                  src={images.Instagram_icon.img}
+                  alt={images.Instagram_icon.info}
+                  title={images.Instagram_icon.info}
                 />
               </a>
             </li>
@@ -61,8 +65,9 @@ function SectionContact() {
               <a href="https://www.behance.net/gravityagencia" target="_blank">
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Be_icon}
-                  alt="Be"
+                  src={images.Be_icon.img}
+                  alt={images.Be_icon.info}
+                  title={images.Be_icon.info}
                 />
               </a>
             </li>
@@ -73,8 +78,9 @@ function SectionContact() {
               >
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Tiktok_icon}
-                  alt="Tiktok"
+                  src={images.Tiktok_icon.img}
+                  alt={images.Tiktok_icon.info}
+                  title={images.Tiktok_icon.info}
                 />
               </a>
             </li>
@@ -85,8 +91,9 @@ function SectionContact() {
               >
                 <img
                   className="aspect-square w-[32px]"
-                  src={images.Pinterest_icon}
-                  alt="Pinterest"
+                  src={images.Pinterest_icon.img}
+                  alt={images.Pinterest_icon.info}
+                  title={images.Pinterest_icon.info}
                 />
               </a>
             </li>
@@ -95,7 +102,12 @@ function SectionContact() {
       </div>
       <div className="bg-azul mt-6 flex w-full max-w-[380px] py-6 px-10 space-x-2 rounded-3xl justify-between items-center sm:max-w-[710px] sm:justify-around lg:flex-col lg:max-w-[310px] lg:py-16">
         <div className="flex items-center justify-center aspect-square w-24 bg-white rounded-full z-10 sm:w-[151px]">
-          <img src={images.envelopColor} className="w-[70%]" />
+          <img
+            src={images.envelopColor.img}
+            alt={images.envelopColor.info}
+            title={images.envelopColor.info}
+            className="w-[70%]"
+          />
         </div>
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-bold text-[20px] text-naranja sm:text-[30px]">

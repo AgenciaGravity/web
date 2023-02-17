@@ -8,7 +8,12 @@ function AboutCards() {
     >
       <li className="w-80 h-28 bg-azul flex rounded-3xl justify-center items-center gap-2 sm:flex-col sm:w-72 sm:h-80 sm:justify-start lg:w-80 lg:h-[420px]">
         <div className="bg-white rounded-full w-16 h-16 sm:w-32 sm:h-32 sm:mt-5">
-          <img className="w-full aspect-square" src={images.mision} alt="Mision icon" />
+          <img
+            className="w-full aspect-square"
+            src={images.mision.img}
+            alt={images.mision.info}
+            title={images.mision.info}
+          />
         </div>
         <div className="w-56 lg:w-full">
           <h4 className="text-naranja text-sm font-bold sm:text-2xl sm:text-center lg:text-4xl lg:py-3">
@@ -23,7 +28,12 @@ function AboutCards() {
       </li>
       <li className="w-80 h-28 bg-azul flex rounded-3xl justify-center items-center gap-2 sm:flex-col sm:w-72 sm:h-80 sm:justify-start lg:w-80 lg:h-[420px]">
         <div className="bg-white rounded-full w-16 h-16 sm:w-32 sm:h-32 sm:mt-5 flex justify-center items-center">
-          <img className="w-[80%]" src={images.vision} alt="Vision icon" />
+          <img
+            className="w-[80%]"
+            src={images.vision.img}
+            alt={images.vision.info}
+            title={images.vision.info}
+          />
         </div>
         <div className="w-56 lg:w-full">
           <h4 className="text-naranja text-sm font-bold sm:text-2xl sm:text-center lg:text-4xl lg:py-3">

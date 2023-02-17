@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "image-header":
-          "url('https://res.cloudinary.com/ddkurzft6/image/upload/v1668180959/gravity/assets/portada-web-con-filtro_pzxccm.jpg')",
+          "url('./src/assets/Agregados/fondo - agencia gravity - publicidad y marketing.jpg')",
       },
       height: {
         "alto-header": "calc(100vh - 70px)",

@@ -53,7 +53,9 @@ function FormYellow() {
         </div>
         <img
           className="w-[22%] max-w-[100px] mr-5 sm:hidden "
-          src={images.Human_012}
+          src={images.Human_012.img}
+          alt={images.Human_012.info}
+          title={images.Human_012.info}
         />
       </div>
       <form
@@ -90,7 +92,12 @@ function FormYellow() {
         <div className="flex justify-between w-full">
           <h4 className="ml-5 text-[10px]">{message}</h4>
           <button className="hover:scale-110 duration-300 flex gap-3 items-center bg-azul rounded-2xl text-white py-1 px-3 text-[10px]">
-            Enviar <img src={images.Arrow_List} alt="Flechita" />
+            Enviar{" "}
+            <img
+              src={images.Arrow_List.img}
+              alt={images.Arrow_List.info}
+              title={images.Arrow_List.info}
+            />
           </button>
         </div>
       </form>

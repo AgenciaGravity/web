@@ -6,15 +6,15 @@ import React from "react";
 
 function ServiceOffer() {
   const [openModalEbbok, setOpenModalEbook] = useState(false);
-  const time = 259200000
-  
+  const time = 259200000;
+
   useEffect(() => {
-    if(loop == null){
-      localStorage.setItem("loop", Date.now())
+    if (loop == null) {
+      localStorage.setItem("loop", Date.now());
     }
   }, []);
 
-  const loop = localStorage.getItem("loop")
+  const loop = localStorage.getItem("loop");
 
   const closeModal = (e) => {
     setOpenModalEbook(e);
@@ -22,8 +22,43 @@ function ServiceOffer() {
 
   const renderer = ({ completed, formatted }) => {
     if (completed) {
-      localStorage.setItem("loop", Date.now())
-      return <span className="text-[20px] text-azul">Terminado</span>;
+      localStorage.setItem("loop", Date.now());
+      return (
+        <div className="flex gap-2 my-4 lg:my-10">
+          <div className="bg-azul text-naranja w-[26px] h-[36px] text-[20px] flex justify-center items-center rounded-[7px] font-bold sm:w-[38px] sm:h-[56px] sm:text-[40px] lg:w-[82px] lg:h-[110px] lg:text-[70px] lg:rounded-[18px]">
+            0
+          </div>
+          <div className="bg-azul text-naranja w-[26px] h-[36px] text-[20px] flex justify-center items-center rounded-[7px] font-bold sm:w-[38px] sm:h-[56px] sm:text-[40px] lg:w-[82px] lg:h-[110px] lg:text-[70px] lg:rounded-[18px]">
+            0
+          </div>
+          <div className="flex flex-col justify-center gap-2">
+            <div className="bg-azul w-[6px] aspect-square rounded-full sm:w-[12px] lg:w-[18px]"></div>
+            <div className="bg-azul w-[6px] aspect-square rounded-full sm:w-[12px] lg:w-[18px]"></div>
+          </div>
+          <div className="bg-azul text-naranja w-[26px] h-[36px] text-[20px] flex justify-center items-center rounded-[7px] font-bold sm:w-[38px] sm:h-[56px] sm:text-[40px] lg:w-[82px] lg:h-[110px] lg:text-[70px] lg:rounded-[18px]">
+            0
+          </div>
+          <div className="bg-azul text-naranja w-[26px] h-[36px] text-[20px] flex justify-center items-center rounded-[7px] font-bold sm:w-[38px] sm:h-[56px] sm:text-[40px] lg:w-[82px] lg:h-[110px] lg:text-[70px] lg:rounded-[18px]">
+            0
+          </div>
+          <div className="flex flex-col justify-center gap-2">
+            <div className="bg-azul w-[6px] aspect-square rounded-full sm:w-[12px] lg:w-[18px]"></div>
+            <div className="bg-azul w-[6px] aspect-square rounded-full sm:w-[12px] lg:w-[18px]"></div>
+          </div>
+          <div className="bg-azul text-naranja w-[26px] h-[36px] text-[20px] flex justify-center items-center rounded-[7px] font-bold sm:w-[38px] sm:h-[56px] sm:text-[40px] lg:w-[82px] lg:h-[110px] lg:text-[70px] lg:rounded-[18px]">
+            0
+          </div>
+          <div className="bg-azul text-naranja w-[26px] h-[36px] text-[20px] flex justify-center items-center rounded-[7px] font-bold sm:w-[38px] sm:h-[56px] sm:text-[40px] lg:w-[82px] lg:h-[110px] lg:text-[70px] lg:rounded-[18px]">
+            0
+          </div>
+          <img
+            className="w-[36px] sm:w-[56px] lg:w-[102px]"
+            src={images.clock.img}
+            alt={images.clock.info}
+            title={images.clock.info}
+          />
+        </div>
+      );
     } else {
       return (
         <div className="flex gap-2 my-4 lg:my-10">
@@ -55,8 +90,9 @@ function ServiceOffer() {
           </div>
           <img
             className="w-[36px] sm:w-[56px] lg:w-[102px]"
-            src={images.clock}
-            alt="Relog icon"
+            src={images.clock.img}
+            alt={images.clock.info}
+            title={images.clock.info}
           />
         </div>
       );
@@ -74,7 +110,7 @@ function ServiceOffer() {
         </p>
         <div className="sm:flex">
           <div className="hidden justify-center items-end w-[50%] p-5 max-w-md sm:flex">
-            <img src={images.astronautGift} alt="Astronauta" />
+            <img src={images.astronautGift.img} alt={images.astronautGift.info} title={images.astronautGift.info} />
           </div>
           <div className="w-full flex flex-col justify-center items-center">
             <h2 className="text-azul font-bold text-center text-[16px] sm:text-[18px] lg:text-[35px]">
@@ -103,7 +139,9 @@ function ServiceOffer() {
               Aprende todo de Marketing digital, Branding y Marca personal con
               lo cual podras potenciar tu marca al maximo,
             </p>
-            <h4 className="text-azul font-bold self-start text-[13px] my-2 sm:text-[18px] lg:text-[20px]">¡OBTENLOS AHORA!</h4>
+            <h4 className="text-azul font-bold self-start text-[13px] my-2 sm:text-[18px] lg:text-[20px]">
+              ¡OBTENLOS AHORA!
+            </h4>
             <button
               className="hover:scale-110 duration-300 bg-azul text-naranja font-bold py-1 px-3 rounded-3xl mt-3 text-[8px] self-end sm:text-[13px] lg:text-[21px] lg:px-7"
               onClick={() => setOpenModalEbook(true)}

@@ -27,8 +27,9 @@ function ServiceCard({ data }) {
         <div className="shadow-services-card flex gap-3 mt-4 rounded-xl w-80 h-32 p-2 justify-center items-center">
           <img
             className="w-16 h-16"
-            src={images[data.img]}
-            alt="Imagen de Servicios"
+            src={images[data.img].img}
+            alt={images[data.img].info}
+            title={images[data.img].info}
           />
           <div>
             <h4 className="text-azul font-bold text-sm">{data.title}</h4>

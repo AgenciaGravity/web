@@ -20,27 +20,27 @@ function FloatingBar() {
             href="https://www.linkedin.com/company/gravity-agencia-de-marketing-y-publicidad/?viewAsMember=true/"
             target="_blank"
           >
-            <img src={images.Linkdln_icon} alt="Icono Linkdin" />
+            <img src={images.Linkdln_icon.img} alt={images.Linkdln_icon.info} title={images.Linkdln_icon.info} />
           </a>
         </li>
         <li className="pb-[5px] duration-300 border-b-2">
           <a href="https://www.facebook.com/SomosGravity" target="_blank">
-            <img src={images.Facebook_icon} alt="Icono Facebook" />
+            <img src={images.Facebook_icon.img} alt={images.Facebook_icon.info} title={images.Facebook_icon.info} />
           </a>
         </li>
         <li className="pb-[5px] duration-300 border-b-2">
           <a href="https://www.instagram.com/agencia_gravity/" target="_blank">
-            <img src={images.Instagram_icon} alt="Icono Instagram" />
+            <img src={images.Instagram_icon.img} alt={images.Instagram_icon.info} title={images.Instagram_icon.info} />
           </a>
         </li>
         <li className="pb-[5px] duration-300 border-b-2">
           <a href="https://www.behance.net/gravityagencia" target="_blank">
-            <img src={images.Be_icon} alt="Icono Behance" />
+            <img src={images.Be_icon.img} alt={images.Be_icon.info} title={images.Be_icon.info} />
           </a>
         </li>
         <li className="pb-[5px] duration-300">
           <a href="https://wa.me/message/A6KRC3PTRPNDO1" target="_blank">
-            <img src={images.Whatssap_icon} alt="Icono Whatsapp" />
+            <img src={images.Whatssap_icon.img} alt={images.Whatssap_icon.info} title={images.Whatssap_icon.info} />
           </a>
         </li>
       </ul>
@@ -49,11 +49,11 @@ function FloatingBar() {
           onClick={() => setIcons(!icons)}
           className="duration-300 hover:scale-90 active:scale-50 cursor-pointer"
         >
-          <img src={images.Glovo_icon____gravity} alt="Icono Gravity" />
+          <img src={images.Glovo_icon____gravity.img} alt={images.Glovo_icon____gravity.info} title={images.Glovo_icon____gravity.info} />
         </li>
         <li className="duration-300 hover:scale-90 active:scale-50">
           <a href="https://wa.me/message/A6KRC3PTRPNDO1" target="_blank">
-            <img src={images.Whatssap_glovo} alt="Icono Wathsapp" />
+            <img src={images.Whatssap_glovo.img} alt={images.Whatssap_glovo.info} title={images.Whatssap_glovo.info} />
           </a>
         </li>
       </ul>

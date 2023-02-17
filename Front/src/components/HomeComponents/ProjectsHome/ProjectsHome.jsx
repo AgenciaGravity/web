@@ -25,8 +25,9 @@ function ProjectsHome() {
           >
             <img
               className="w-[57px] aspect-square sm:w-[70px]"
-              src={images[item.img.icon]}
-              alt={item.name}
+              src={images[item.img.icon].img}
+              alt={images[item.img.icon].info}
+              title={images[item.img.icon].info}
             />
             {item === selectedTab ? (
               <motion.div className="select_proyect" layoutId="underline" />
